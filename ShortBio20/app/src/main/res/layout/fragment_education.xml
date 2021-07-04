@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".EducationFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B4CCC7">
+        <TextView
+                android:text="Formação"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitleSobre"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="150dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="140dp"/>
+        <TextView
+                android:text="Estudante de Análise de Sistemas.\n
+Faculdade de Tecnologia de Praia Grande (Fatec)\n
+Inicio: 08/2019 Término: 07/2022"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAbout"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleSobre"
+                android:layout_marginTop="70dp"
+                app:layout_constraintVertical_bias="0.095"
+                tools:layout_editor_absoluteY="258dp"
+                tools:layout_editor_absoluteX="60dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
