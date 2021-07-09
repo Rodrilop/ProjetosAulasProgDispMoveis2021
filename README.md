@@ -1,2 +1,14 @@
-# Programação para Dispositivos Móveis 2021
-Projetos Aulas de Programação para Dispositivos Móveis
+<div align="center">
+
+<img src = "https://img.shields.io/static/v1?label=license&message=MIT&color=<COLOR>&style=<STYLE>&logo=<LOGO>" /> 
+<img src = "https://img.shields.io/static/v1?label=kotlin&message=v1.15.20&color=purple&style=<STYLE>&logo=<LOGO>" /> 
+</p>
+
+<h1 align="center">
+    <a href="https://kotlinlang.org/">📱 Programação para Dispositivos Móveis 2021 - Kotlin 📱</a>
+</h1>
+<p align="center">App's desenvolvidos em aula</p>
+
+<h4 align="center"> 
+	🚧  Projetos 🚀 em desenvolvimento by Rodrigo Lopes📱 ✅
+</h4>
