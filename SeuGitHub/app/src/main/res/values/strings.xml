@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Seu GitHub</string>
+    <string name="edtHintGithub">Digite seu Github...</string>
+</resources>
