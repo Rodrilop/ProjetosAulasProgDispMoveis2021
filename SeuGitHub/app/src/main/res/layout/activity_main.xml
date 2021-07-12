@@ -82,7 +82,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btnBuscarUsuario"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-            app:layout_constraintEnd_toStartOf="@+id/guidelineRight" android:id="@+id/corzinha"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight" android:id="@+id/corfundo"
             android:background="#144575D6">
 
         <de.hdodenhof.circleimageview.CircleImageView

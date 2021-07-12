@@ -1,6 +1,6 @@
 package com.rodrigo.seugithub
 
-import android.graphics.Bitmap
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.rodrigo.seugithub.domain.GithubService
 import com.rodrigo.seugithub.util.Network
 import kotlinx.coroutines.*
-import java.lang.System.console
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var respostaLogin: TextView
     private lateinit var carregamentoLogin: ProgressBar
     private lateinit var avatar: ImageView
-    private lateinit var corzinha: RelativeLayout
+    private lateinit var corfundo: RelativeLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         respostaLogin = findViewById(R.id.txtUserResponse)
         carregamentoLogin = findViewById(R.id.prgLoading)
         avatar = findViewById(R.id.avatar)
-        corzinha = findViewById(R.id.corzinha)
-        corzinha.visibility = View.INVISIBLE
+        corfundo = findViewById(R.id.corfundo)
+        corfundo.visibility = View.INVISIBLE
 
         botaoLogin.setOnClickListener{
             val usuario = campoLogin.text.toString()
@@ -42,7 +41,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun buscarUsuario(login: String){
+    @SuppressLint("SetTextI18n")
+    private fun buscarUsuario(login: String){
         val retrofitClient = Network.retrofitConfig("https://api.github.com/users/")
         val servico = retrofitClient.create(GithubService::class.java)
 
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                         respostaLogin.text = response.body().toString()
                         Glide.with(this@MainActivity).load(response.body()?.picToString()).into(avatar)
 
-                        corzinha.visibility = View.VISIBLE
+                        corfundo.visibility = View.VISIBLE
                     }
                 }
             }catch (e: Exception){
@@ -69,19 +69,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun changeLoadingVisibility(isVisible: Boolean){
+    private fun changeLoadingVisibility(isVisible: Boolean){
         if(isVisible){
             respostaLogin.text = ""
             carregamentoLogin.visibility = View.VISIBLE
             botaoLogin.visibility = View.INVISIBLE
             avatar.visibility = View.INVISIBLE
-            corzinha.visibility = View.INVISIBLE
+            corfundo.visibility = View.INVISIBLE
 
         } else {
             carregamentoLogin.visibility = View.INVISIBLE
             botaoLogin.visibility = View.VISIBLE
             avatar.visibility = View.VISIBLE
-            corzinha.visibility = View.VISIBLE
+            corfundo.visibility = View.VISIBLE
         }
     }
 }
