@@ -9,7 +9,7 @@ class Cep(@SerializedName("logradouro") val logradouro: String,
 
     //Sobrecarga de método
     override fun toString() : String {
-        return "Rua: $logradouro\nBairro:$bairro\nE fica em: $cidade / $uf"
+        return "$logradouro\nBairro: $bairro\nE fica em: $cidade / $uf"
     }
 
 }
