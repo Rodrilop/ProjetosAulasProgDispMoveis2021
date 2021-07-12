@@ -8,7 +8,7 @@
     <a href="https://kotlinlang.org/">📱 Programação para Dispositivos Móveis 2021 - Kotlin 📱</a>
 </h1>
 <p align="center">App's desenvolvidos em aula</p>
-
+![MyApps](https://user-images.githubusercontent.com/64019127/125324862-b0cde000-e316-11eb-8af9-a6e78ab76f86.jpeg)
 <h4 align="center"> 
 	🚧  Projetos 🚀 em desenvolvimento by Rodrigo Lopes📱 ✅
 </h4>
