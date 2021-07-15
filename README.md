@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src = "https://img.shields.io/static/v1?label=license&message=MIT&color=<COLOR>&style=<STYLE>&logo=<LOGO>" /> 
-<img src = "https://img.shields.io/static/v1?label=kotlin&message=v1.15.20&color=purple&style=<STYLE>&logo=<LOGO>" /> 
+<img src = "https://img.shields.io/static/v1?label=kotlin&message=v1.5.20&color=purple&style=<STYLE>&logo=<LOGO>" /> 
 </p>
 
 <h1 align="center">
